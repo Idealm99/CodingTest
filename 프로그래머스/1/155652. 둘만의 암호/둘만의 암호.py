@@ -4,11 +4,11 @@ def solution(s, skip, index):
     for a in range(len(skip)):
         alpha.remove(skip[a])
     
-    alpha *=3
+    
         
     st=''
     for i in s:
-        st+=alpha[alpha.index(i)+index]
+        st += alpha[(alpha.index(i)+index)%len(alpha)]
     return st
 
 
