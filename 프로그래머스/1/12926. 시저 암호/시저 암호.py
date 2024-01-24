@@ -6,13 +6,13 @@ def solution(s, n):
                 if 123>ord(i)+n:         
                     a+=chr(ord(i)+n)
                 else: 
-                    a+=chr(ord(i)+n-26)
+                    a+=chr((ord(i)+n-ord('a'))%26+ord('a'))
 
             else: 
                 if 91>ord(i)+n:
-                    a+=chr(ord(i)+n)
+                    a+=chr((ord(i)+n))
                 else:
-                    a+=chr(ord(i)+n-26)
+                    a+=chr((ord(i)+n-ord('A'))%26+ord('A'))
                 
         else:
             a+=' '
