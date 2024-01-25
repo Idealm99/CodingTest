@@ -1,19 +1,23 @@
 def solution(s):
     dick = {}
+    li =[]
     for idx, ap in enumerate(s):
-        if ap in dick.keys():
-            dick[ap].append(idx)
+        if ap in dick:
+            li.append(idx-dick[ap])
+            
         else:
-            dick[ap] = [idx]
-    print(dick)
-    li =[None]*len(s)
-    key = list(dick.keys()) 
-    print(key)
-    for i in key:
-        value = list(dick[i])
-        for idx, j in enumerate(value) :
-            if idx == 0 :
-                li[j]= -1
-            else:
-                li[j]=value[idx]-value[idx-1]
+            li.append(-1)
+        dick[ap]=idx
     return li
+
+# def solution(s):
+#     answer = []
+#     dic = dict()
+#     for i in range(len(s)):
+#         if s[i] not in dic:
+#             answer.append(-1)
+#         else:
+#             answer.append(i - dic[s[i]])
+#         dic[s[i]] = i
+
+#     return answer
