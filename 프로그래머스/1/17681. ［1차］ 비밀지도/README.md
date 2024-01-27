@@ -2,6 +2,17 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17681) 
 
+## 배운점
+
+rjust 함수를 사용해서 빈칸을 채울 수 있다
+
+예를 들어서
+
+```cpp
+>>> 'Hello, world!'.rjust(20, '*')
+'Hello, world!********'
+```
+
 ### 성능 요약
 
 메모리: 10.2 MB, 시간: 0.02 ms
