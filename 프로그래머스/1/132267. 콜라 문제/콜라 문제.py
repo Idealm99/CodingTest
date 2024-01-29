@@ -3,11 +3,10 @@ def solution(a, b, n):
     cnt=0
     rest=0
     while n >= a :
-        k=n
-        n= ((n)//a)*b
-        rest= k%a
-        cnt += n
-        n += rest
+        cnt+= ((n)//a)*b
+
+
+        n = ((n)//a)*b+ (n%a)
         
     
     
