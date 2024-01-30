@@ -1,5 +1,5 @@
 def solution(nums):
-    a= len(nums)//2
+    a= len(nums)/2
     b=set(nums)
     
         
