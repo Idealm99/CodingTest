@@ -2,6 +2,15 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12977) 
 
+## 배운점
+```
+    from itertools import combinations
+
+    at=list(combinations(nums,3))
+```
+
+이렇게 콤바인 함수를 이용해서 만들 수 있는 조합 3가지를 만들 수 있다 n개를 이용해서도 가능
+
 ### 성능 요약
 
 메모리: 10.3 MB, 시간: 0.02 ms
