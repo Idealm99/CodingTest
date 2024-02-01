@@ -1,4 +1,5 @@
 def solution(strings, n):
+    #a.sort(key=i[n])으로도 정렬이 됨
     dict={}
     for i in strings :
         if i[n] in dict :
