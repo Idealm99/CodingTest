@@ -2,6 +2,13 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12915) 
 
+## 배운점
+
+```
+sorted( list , key=i[n])
+```
+i의 n번째 인덱스를 기준으로 정렬이 가능하다
+
 ### 성능 요약
 
 메모리: 10.1 MB, 시간: 0.02 ms
