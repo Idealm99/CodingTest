@@ -15,4 +15,10 @@ def solution(participant, completion):
     for i in dict.keys():
         if dict[i] > 0 :
             return i
+        
+# import collections
+
+# def solution(participant, completion):
+#     answer = collections.Counter(participant) - collections.Counter(completion)
+#     return list(answer.keys())[0]
     
