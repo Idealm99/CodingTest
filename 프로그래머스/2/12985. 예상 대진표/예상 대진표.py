@@ -9,7 +9,7 @@ def solution(n, a, b):
             n = n // 2
             c += 1
         return c
-    
+# 배울만한 코드   
 # def solution(n,a,b):
 #     answer = 0
 #     while a != b:
