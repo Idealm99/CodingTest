@@ -16,27 +16,19 @@ def solution(people, limit):
     if li[j]==0:
         count+=1
     return count
-            
-# def solution(people, limit):
-#     count=0
-#     n=len(people)
-#     people.sort(reverse=True)
-#     l=[0]*n
-#     i,j=0,n-1
 
-#     while j>i:
-#         w=people[i]+people[j]
-#         l[i]=1
-#         i+=1
-#         if w<=limit:
-#             l[j]=1
-#             j-=1
-#         count+=1
+# def solution(people, limit) :
+#     answer = 0
+#     people.sort()
 
-#     if l[j]==0:
-#         count+=1
-
-#     return count
+#     a = 0
+#     b = len(people) - 1
+#     while a < b :
+#         if people[b] + people[a] <= limit :
+#             a += 1
+#             answer += 1
+#         b -= 1
+#     return len(people) - answer
         
     
     
