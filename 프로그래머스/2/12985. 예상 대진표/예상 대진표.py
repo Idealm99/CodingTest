@@ -9,4 +9,11 @@ def solution(n, a, b):
             n = n // 2
             c += 1
         return c
+    
+# def solution(n,a,b):
+#     answer = 0
+#     while a != b:
+#         answer += 1
+#         a, b = (a+1)//2, (b+1)//2
 
+#     return answer
