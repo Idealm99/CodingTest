@@ -5,9 +5,9 @@ def solution(n):
         for j in range(2,i+1):
             if i%j ==0:
                 s+=1
-        if s >= 2:
-            print(i)
-            count+=1
+                if s >= 2:
+                    count+=1
+                    break
     return count
 
 
