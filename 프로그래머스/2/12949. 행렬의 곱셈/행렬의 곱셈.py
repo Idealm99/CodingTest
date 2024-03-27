@@ -1,16 +1,13 @@
 def solution(arr1, arr2):
-    a= len(arr1[0]) # 열
+    
     b=len(arr2[0])
     li= []
     
     
-    for i in  arr1:
-        l=[]
-        for idx in range(b):
+    
+    li=[[ sum(k[0]*k[1]  for k in zip(i, [j[idx] for j in arr2])) for idx in range(b)]for i in  arr1]
             
-            a=[ k[0]*k[1]  for k in zip(i, [j[idx] for j in arr2])]
-            l.append(sum(a)) 
-        li.append(l)
+        
     return li
                     
                 
