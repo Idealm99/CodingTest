@@ -86,7 +86,7 @@ cnt = collections.Counter(tangerine)
 * 사용방법
 
 ```
-from collections import combinations
+from itertools import combinations
 
 # 5개의 숫자 중 3개를 선택하는 조합 모두 출력
 numbers = [1, 2, 3, 4, 5]
@@ -111,7 +111,7 @@ for comb in combinations(numbers, 3):
 * 사용 방법
   
 ```
-from collections import ChainMap
+from itertools  import ChainMap
 
 user_config = {"name": "Bard"}
 default_config = {"language": "python"}
