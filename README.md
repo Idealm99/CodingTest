@@ -81,6 +81,20 @@ cnt = collections.Counter(tangerine)
 ```
 위 코드로 유닛의 개수를 사전 형식으로 한번에 구할 수 있다.
 
+## defaultdict
+
+```
+from collections import defaultdict
+
+
+    # 각 종류의 옷이 몇 개 있는지를 defaultdict를 사용해 카운트합니다.
+    counts = defaultdict(int)
+    for item, category in clothes:
+        counts[category] += 1
+```
+
+# itertools 모듈듈
+
 ## combinations( 조합을 계산할 대상 컬렉션 , 선택할 원소의 개수)
 
 * 사용방법
